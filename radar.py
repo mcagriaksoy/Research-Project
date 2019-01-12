@@ -6,7 +6,7 @@ GPIO.setmode(GPIO.BOARD)
 GPIO.setup(12, GPIO.OUT)
 
 p = GPIO.PWM(12, 50)
-trig = 16
+trig = 38
 echo = 18
 p.start(7.5)
 GPIO.setup(trig, GPIO.OUT)
