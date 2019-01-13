@@ -25,46 +25,46 @@ def allStop():
     reverseRight.value = 0
  
 def forwardDrive():
-    forwardLeft.value = 1.0
+    forwardLeft.value = 1
     reverseLeft.value = 0
-    forwardRight.value = 1.0
+    forwardRight.value = 1
     reverseRight.value = 0
  
 def reverseDrive():
     forwardLeft.value = 0
-    reverseLeft.value = 1.0
+    reverseLeft.value = 1
     forwardRight.value = 0
-    reverseRight.value = 1.0
+    reverseRight.value = 1
 
 def forwardTurnLeft():
-    forwardLeft.value = 0.2
-    reverseLeft.value = 0
-    forwardRight.value = 0.8
-    reverseRight.value = 0
- 
-def forwardTurnRight():
     forwardLeft.value = 0.8
     reverseLeft.value = 0
-    forwardRight.value = 0.2
+    forwardRight.value = 0
+    reverseRight.value = 0.8
+ 
+def forwardTurnRight():
+    forwardLeft.value = 0
+    reverseLeft.value = 0.8
+    forwardRight.value = 0.8
     reverseRight.value = 0
  
  
 def main():
     allStop()
     print("forward")
-    forwardDrive()
-    sleep(5)
-    reverseDrive()
-    print("reverse")
-    sleep(5)
+#    forwardDrive()
+#    sleep(0.3)
     forwardTurnLeft()
-    print("turn left")
-    sleep(5)
-    forwardTurnRight()
-    print("turn right")
-    sleep(5)
+    sleep(0.248)
     allStop()
- 
+    sleep(2)
+    forwardTurnRight()
+    sleep(0.245)
+#    reverseDrive()
+#    print("reverse")
+#    sleep(0.4)
+#    allStop()
+# 
  
 if __name__ == "__main__":
     """ This is executed when run from the command line """
